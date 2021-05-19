@@ -1,0 +1,11 @@
+so here's the solution 
+
+juat paste this code into terminal
+
+code :- update-alternatives --config iptables
+
+now u will have 3 option before you
+
+simply choose 1 which will be iptables-legacy
+
+problem solve
