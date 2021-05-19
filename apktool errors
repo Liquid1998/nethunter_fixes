@@ -1,0 +1,60 @@
+so to get rid of apktools all the errors i tried my best....maybe there can be some errors left
+
+so first of all remove inbuilt apktool using
+
+command :- apt-get remove apktool && apt-get autoremove 
+
+now we will install openjdk-11-jdk package
+
+command :- apt-get install openjdk-11-jdk
+
+now we will install official apktool
+
+got to this below site and follow all the steps
+
+site :- https://ibotpeaches.github.io/Apktool/install/
+
+download apktool wrapper using wget commamd
+
+command :- wge https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
+
+now download apktool.jar file 
+
+command :- wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.5.0.jar
+
+rename it to apktool.jar
+
+command :- mv apktool_2.5.0.jar apktool.jar
+
+now give the executable permission
+
+command :- chmod +x apktool apktool.jar
+
+now move this two files into /usr/bin folder
+
+command :- mv apktool /usr/bin/ && mv apktool.jar /usr/bin/
+
+now it's to download aapt binaries and android-framework-res
+
+command :- apt-get install aapt android-framework-res
+
+now we are ready to role
+
+but first of all we need to set our framework apk...so for that
+
+command :- apktool if /usr/share/android-framework-res/framework-res.apk
+
+Now, try our new apktool but with new aapt2 binaries...i will show u while building apk
+
+command :- apktool d {apkname}
+
+now do your modification and ready to build
+
+command :- apktool b {apk_foldername} -a /usr/bin/aapt2
+
+
+hoorayyyy!!!!!!!......working like a charm (NOTE :- sometimes it won't work because of large apk)
+
+so why i didn't use inbuild aapt binaries.....because it is not compatible with our device
+
+that's why i used our own aapt2 binaries.....
