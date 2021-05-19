@@ -1,0 +1,36 @@
+whenever u start beef from menu it won't start. It will just show you that you need to change your password.
+
+you simply enter the password and after that it starts beef.but it won't start and show you this 
+
+http://localhost:3000 unable to connect
+
+so, here is the fix
+
+you simply need to go to the directory of beef which is located under /usr/share
+
+so just cd into beef directory using below code
+
+code :- cd /usr/share/beef-xss
+
+now simply run beef binary using code
+
+code :- ./beef
+
+Now this problem is solved.but after that another problem u will encounter and that is
+
+not able to hook victim because of $LANG error which u can see after starting beef
+
+so to solve this issue you just have to copy and paste this three lines into your .bashrc or .zshrc whatever the shell you are running
+
+code :-
+
+        export LANG=en_US.UTF-8
+        export LANGUAGE=en_US.UTF-8
+        export LC_ALL=en_US.UTF-8
+       
+NOW, refresh your source or simply reopen the terminal
+
+and again run beef from directory
+
+problem solved
+
