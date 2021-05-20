@@ -4,9 +4,10 @@ so first of all remove inbuilt apktool using
 
 command :- apt-get remove apktool && apt-get autoremove 
 
-now we will install openjdk-11-jdk package
+now we will install openjdk-11-jdk and openjdk-17-jdk packages
 
-command :- apt-get install openjdk-11-jdk
+command :- apt-get install openjdk-11-jdk openjdk-17-jdk
+
 
 now we will install official apktool
 
@@ -53,8 +54,8 @@ now do your modification and ready to build
 command :- apktool b {apk_foldername} -a /usr/bin/aapt2
 
 
-hoorayyyy!!!!!!!......working like a charm (NOTE :- sometimes it won't work because of large apk)
+hoorayyyy!!!!!!!......working like a charm (NOTE :- sometimes it won't work because of large apk and some apktool errors(dev side))
 
-so why i didn't use inbuild aapt binaries.....because it is not compatible with our device
+so why i didn't use inbuild apktools aapt binaries.....because it is not compatible with our device
 
 that's why i used our own aapt2 binaries.....
