@@ -6,15 +6,15 @@ first of all we will delete .vnc directory and delete all the content of tmp dir
 
 if you are creating root users vnc server copy and paste below command
 
-code :- rm -rf /root/.vnc && rm -rf /tmp/* && rm -rf /tmp/.*
+## code :- rm -rf /root/.vnc && rm -rf /tmp/* && rm -rf /tmp/.* ##
 
 if you are creating kali users vnc server copy and paste below command
 
-rm -rf /kali/.vnc && rm -rf /tmp/* && rm -rf /tmp/.*
+## code :- rm -rf /kali/.vnc && rm -rf /tmp/* && rm -rf /tmp/.* ##
 
 just copy and paste this command into terminal to atart new vncserver
 
-code :- vncserver
+## code :- vncserver ##
 
 now provide password and done
 
@@ -22,6 +22,6 @@ connect to vnc and enjoy
 
 to stop vnc server you can just go to nethunter app >> kex manager
 
-hit the stop button
+hit the **stop** button
 
 now you can again start vncserver from nethunter app....so no need to use vncserver command all the time
