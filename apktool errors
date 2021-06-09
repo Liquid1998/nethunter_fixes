@@ -35,7 +35,7 @@ now move this two files into /usr/bin folder
 
 command :- mv apktool /usr/bin/ && mv apktool.jar /usr/bin/
 
-now it's to download aapt binaries and android-framework-res
+now it's time to download aapt binaries and android-framework-res
 
 command :- apt-get install aapt android-framework-res
 
