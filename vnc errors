@@ -1,22 +1,24 @@
-so after doing the full upgrade of nethunter i encountered a vnc server problem
+# so after doing the full upgrade of nethunter i encountered a vnc server problem
 
-so to fix these issues
+## so to fix these issues
 
 first of all we will delete .vnc directory and delete all the content of tmp directory
 
 if you are creating root users vnc server copy and paste below command
 
-## code :- rm -rf /root/.vnc && rm -rf /tmp/* && rm -rf /tmp/.* ##
+## code :- rm -rf /root/.vnc && rm -rf /tmp/* && rm -rf /tmp/.*
 
 if you are creating kali users vnc server copy and paste below command
 
-## code :- rm -rf /kali/.vnc && rm -rf /tmp/* && rm -rf /tmp/.* ##
+## code :- rm -rf /kali/.vnc && rm -rf /tmp/* && rm -rf /tmp/.* 
 
-just copy and paste this command into terminal to atart new vncserver
+just copy and paste this command into terminal to start new vncserver
 
-## code :- vncserver ##
+## Code :- vncserver
 
-now provide password and done
+Or U can just click on **setup local server** in kali nethunter app
+
+And **start** the server
 
 connect to vnc and enjoy
 
