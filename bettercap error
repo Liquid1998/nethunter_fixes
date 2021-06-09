@@ -1,6 +1,10 @@
+# Because of iptables-nft we will face some issues in bettercap
+
+## So for that we will use iptables-legacy
+
 so here's the solution 
 
-juat paste this code into terminal
+just paste this code into terminal
 
 code :- update-alternatives --config iptables
 
